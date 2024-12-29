@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('background.gif'); /* tło */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column; /* chuj wie co to xdd */
+    align-items: center;
+    justify-content: center; /* Wyśrodkuj w pionie */
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+    margin-bottom: 20px;
+}
+
+.icon {
+    width: 100px; /* Rozmiar ikony */
+    height: 100px; /* Rozmiar ikony */
+}
+
+.options-container {
+    margin-bottom: 20px;
+}
+
+.option-button {
+    font-size: 18px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.content-container {
+    display: none;
+    text-align: center; /* Wyśrodkuj zawartość */
+}
+
+.quote, .challenge {
+    font-size: 24px;
+    color: #333;
+    margin: 20px auto; /* Wyśrodkuj w poziomie */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.9); /* Tło dla treści */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+    display: none; /* Ukrywanie pytań na start strony */
+}
+
+.show {
+    display: block;
+}
+
+.kolorowo {
+    color: red; /* kolor przy "UWAGA NIE CZYTAJ" */
+}
+
+.hidden {
+    display: none;
+}
+
+.popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+}
+#popup-message {
+    z-index: 1000; /* Upewnia się, że popup jest nad innymi elementami */
+}
+
+button#close-popup {
+    z-index: 1001; /* Upewnia się, że przycisk jest klikalny */
+}
+a.instagram-link {
+    text-decoration: none;
+    color: inherit;
+    
+}
+
+a.instagram-link img {
+    width: 32px;
+    height: 32px;
+    vertical-align: middle;
+}
+
