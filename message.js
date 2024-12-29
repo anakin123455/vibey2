@@ -23,7 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
     modalBox.style.width = "80%";
 
     const modalMessage = document.createElement("p");
-    modalMessage.textContent = "Nikola Ignasz to kurwa";
+    modalMessage.textContent = "N.I to kurwa";
     modalMessage.style.marginBottom = "20px";
     modalMessage.style.fontSize = "16px";
     modalMessage.style.color = "#333";
